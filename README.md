@@ -1,1 +1,2 @@
 # KFC.invntry
+Project aplikasi menggunakan bahasa Java dengan IDE Netbeans 8.2 yang sudah di clean and build menjadi file .jar disertai file database .sql, akses login single user dengan 4 form masukkan dan 6 keluaran menggunakan ireport JasperReport. Project aplikasi ini merupakan penunjang tugas akhir kuliah teman yang saya buatkan, jika ingin mengembangkan menjadi lebih baik lagi dipersilahkan. Dan jika membutuhkan master file aplikasi ini dipersilahkan juga untuk email, Terimakasih.
