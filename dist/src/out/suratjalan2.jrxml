@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4d93e7a3-f571-4fcf-92f6-9d3108d635a3">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="19"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     brg_keluar.`kd_stok` AS kd_stok,
+     brg_keluar.`kd_keluar` AS kd_keluar,
+     brg_keluar.`nama_brg` AS nama_brg,
+     brg_keluar.`jmlh_keluar` AS jmlh_keluar,
+     brg_keluar.`satuan` AS satuan,
+     brg_keluar.`ket` AS ket,
+     brg_keluar.`tgl_keluar` AS tgl_keluar
+FROM
+     `brg_keluar` brg_keluar]]>
+	</queryString>
+	<field name="kd_stok" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kd_keluar" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_brg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jmlh_keluar" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="satuan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ket" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_keluar" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="92" splitType="Stretch">
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement positionType="Float" x="10" y="10" width="79" height="75" uuid="6b26b078-0a23-4d05-a88d-be22d7307081"/>
+				<imageExpression><![CDATA["D:\\Programming\\Netbeans\\KFC.invntry\\src\\out\\external-content.duckduckgo.com.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="94" y="10" width="198" height="50" uuid="fc69ae8e-8462-4b84-9885-31004f8bc2af"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="20"/>
+				</textElement>
+				<text><![CDATA[KFC
+PT. FastFood Indonesia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="94" y="65" width="708" height="20" uuid="9dee9e8d-4139-4df8-8efc-a8eb9347dd83"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jalan Raya Bogor KM.25, Susukan, Ciracas, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13220, Indonesia. No.Telp: (021) 87711524]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="292" y="1" width="246" height="34" uuid="bbc8a720-3d85-45e8-a04d-4ca0b8d02600"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="18"/>
+				</textElement>
+				<text><![CDATA[Surat Jalan Pengiriman Barang]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="34" width="802" height="1" uuid="39aa5559-4215-484a-ab67-5f6a3ad45285"/>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="802" height="1" uuid="ed42aa1b-15f2-4044-8a57-e454aa03bfb5"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement x="124" y="6" width="100" height="20" uuid="8f9b59f6-a74b-4c1e-b14e-eb67e599c60e"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Kode Keluar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="244" y="6" width="100" height="20" uuid="2a1dd7b8-a3d2-44c0-9355-4f61b73c64fd"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nama Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="364" y="6" width="100" height="20" uuid="e8d51460-b046-4e77-aa34-c2167a12a416"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jumlah Keluar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="484" y="6" width="100" height="20" uuid="3706d1b8-1db1-467d-9673-f4a053104119"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Satuan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="604" y="6" width="100" height="20" uuid="c900355b-399b-4347-968e-3dbae826d754"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Keterangan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="45" splitType="Stretch">
+			<textField>
+				<reportElement x="124" y="0" width="100" height="45" uuid="4200fe3c-f9df-43dd-bb1c-4674136425e8"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kd_keluar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="244" y="0" width="100" height="45" uuid="c8a41fcd-3f62-459d-a767-155275a16510"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_brg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="364" y="0" width="100" height="45" uuid="d404abef-aaf3-4cb9-be8f-e10c157acf67"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jmlh_keluar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="484" y="0" width="100" height="45" uuid="04130ecf-ccb1-4acb-b658-a5e96a6067d8"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{satuan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="604" y="0" width="100" height="45" uuid="3988a7e0-187c-4920-b6fc-9951e0836404"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ket}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="134" splitType="Stretch">
+			<staticText>
+				<reportElement x="628" y="10" width="41" height="20" uuid="b76bf1ed-6bf1-44c7-b68a-36d2c48ac5e6"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="669" y="10" width="125" height="20" uuid="f838993e-1f60-43da-a6ed-ea67f4542635"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="644" y="30" width="150" height="20" uuid="a1558efc-4121-42be-84f7-e6d971e24603"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Mengetahui, Manager Gudang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="30" width="37" height="20" uuid="afece8c0-92d2-42f6-87a9-aaadaceec225"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Driver]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="693" y="104" width="100" height="20" uuid="7b735415-3568-48c8-9bfc-179bf4602a7a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Suparyadi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="104" width="100" height="20" uuid="4bc88cb1-e2ff-43e1-994d-006c4c413ed1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Fikri]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="802" height="1" uuid="00439249-c209-4771-a1e4-7c225317ac36"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="28" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

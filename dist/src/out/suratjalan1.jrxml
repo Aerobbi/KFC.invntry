@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="edf65cf5-e84b-419d-b577-22b9930234f8">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[SELECT
+     brg_reject.`kd_stok` AS kd_stok,
+     brg_reject.`kd_reject` AS kd_reject,
+     brg_reject.`nama_brg` AS nama_brg,
+     brg_reject.`jumlah_reject` AS jumlah_reject,
+     brg_reject.`satuan` AS satuan,
+     brg_reject.`supplier` AS supplier,
+     brg_reject.`ket` AS ket,
+     brg_reject.`tgl_reject` AS tgl_reject
+FROM
+     `brg_reject` brg_reject]]>
+	</queryString>
+	<field name="kd_stok" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kd_reject" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_brg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumlah_reject" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="satuan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="supplier" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ket" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_reject" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement positionType="Float" x="5" y="0" width="79" height="75" uuid="5407136d-a236-4c63-ab12-2c6c4f85fe0f"/>
+				<imageExpression><![CDATA["D:\\Programming\\Netbeans\\KFC.invntry\\src\\out\\external-content.duckduckgo.com.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="89" y="0" width="198" height="50" uuid="6be563a5-033f-4669-b25b-e4ff519aeedd"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Times New Roman" size="20"/>
+				</textElement>
+				<text><![CDATA[KFC
+PT. FastFood Indonesia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="89" y="55" width="713" height="20" uuid="26392dfd-101a-4fa0-9720-afee06d6acf1"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jalan Raya Bogor KM.25, Susukan, Ciracas, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13220, Indonesia. No.Telp: (021) 87711524]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="802" height="1" uuid="27327d00-e498-4673-8da9-e9b410d6cde4"/>
+			</line>
+			<staticText>
+				<reportElement x="287" y="1" width="246" height="34" uuid="4fbe92b6-e80d-4711-a920-a256af3bac36"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="18"/>
+				</textElement>
+				<text><![CDATA[Surat Jalan Pengembalian Barang]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="34" width="802" height="1" uuid="40631531-81fd-4552-b6ce-c37cd051e017"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="35">
+			<staticText>
+				<reportElement x="87" y="7" width="100" height="20" uuid="9d8dffa2-44d1-41d2-94a8-458a95a6db9a"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Kode Reject]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="197" y="7" width="100" height="20" uuid="76e16763-3cd4-4968-8076-034389b33755"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Nama Barang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="307" y="7" width="100" height="20" uuid="ba08e1fa-7036-4e82-91a9-205f6ac35508"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Supplier]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="7" width="100" height="20" uuid="b39af95a-7300-4d03-b0a8-d636cb4813fd"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jumlah Reject]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="527" y="7" width="100" height="20" uuid="ea2f042e-8416-4cae-b2b7-7f80163dbc3f"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Satuan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="637" y="7" width="100" height="20" uuid="5f2ead66-1861-4d57-9a28-9064112726e7"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Keterangan]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="87" y="0" width="100" height="40" uuid="2170111a-ea35-45f6-96d1-2ccc9797a7bf"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kd_reject}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="197" y="0" width="100" height="40" uuid="5fe95ba0-0ac5-4b22-9db4-172d0b7135ea"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_brg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="307" y="0" width="100" height="40" uuid="9d825c24-242d-4939-8edb-f3ae1e4bf7ca"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{supplier}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="100" height="40" uuid="b7cdb395-64b7-443d-ab15-87b7cbd8f578"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jumlah_reject}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="527" y="0" width="100" height="40" uuid="ef6942cf-987c-4089-a968-80c6e0f899c7"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{satuan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="637" y="0" width="100" height="40" uuid="8439b273-1216-48df-b3bf-4edfc76f1279"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ket}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="115" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="802" height="1" uuid="d1f9966c-ee8a-447c-82d6-92b4c331513b"/>
+			</line>
+			<staticText>
+				<reportElement x="631" y="1" width="41" height="20" uuid="18a04b0c-bab1-4144-899a-d08981ba78c3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Jakarta,]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="672" y="1" width="125" height="20" uuid="5573508c-6d75-48bf-a918-3f4acdd18fb1"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="647" y="21" width="150" height="20" uuid="81191d75-2cee-44f3-af62-8b82a48b9a1d"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Mengetahui, Manager Gudang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="21" width="37" height="20" uuid="f07a412c-6311-43f3-9a09-646cce57957c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Driver]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="696" y="95" width="100" height="20" uuid="0db5b3bb-4327-4618-976b-882253346101"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Suparyadi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="95" width="100" height="20" uuid="84279960-f750-4eb5-af50-f3c3ed3b0ed0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Fikri]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="26" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>
